@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom'
        setProduct(data)
      }
      fetchProduct()
-   }, [])
+   }, [match])
 
    
   
