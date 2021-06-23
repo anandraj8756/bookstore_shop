@@ -1,5 +1,6 @@
 import asyncHandler from 'express-async-handler'
 import User from '../models/userModel.js'
+import generateToken from '../utils/generateToken.js'
 
  // @desc    Auth user & get token
  // @route   GET /api/users/login
@@ -15,7 +16,7 @@ import User from '../models/userModel.js'
            name: user.name,
            email: user.email,
            isAdmin: user.isAdmin,
-           token: null
+           token: generateToken(user._id),
        }) 
 
    } else{
