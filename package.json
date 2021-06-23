@@ -1,0 +1,22 @@
+{
+  "name": "bookstore-shop",
+  "version": "1.0.0",
+  "description": "E-commerce Online Book Store Shop using React Js and MongoDB.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anandraj8756/BookStore-Shop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anandraj8756/BookStore-Shop/issues"
+  },
+  "homepage": "https://github.com/anandraj8756/BookStore-Shop#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
