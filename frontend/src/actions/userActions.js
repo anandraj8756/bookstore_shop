@@ -3,6 +3,7 @@ import axios from 'axios'
    USER_LOGIN_FAIL,
    USER_LOGIN_REQUEST,
    USER_LOGIN_SUCCESS,
+   USER_LOGOUT,
  } from '../constants/userConstants'
 
  export const login = (email, password) => async (dispatch) => {
@@ -39,3 +40,8 @@ import axios from 'axios'
      })
    }
  }
+
+ export const logout = () => (dispatch) => {
+  localStorage.removeItem('userInfo')
+  dispatch({ type: USER_LOGOUT })
+}
