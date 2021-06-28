@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
  import Loader from '../components/Loader'
  import { listProductDetails, createProductReview } from '../actions/productActions'
  import { PRODUCT_CREATE_REVIEW_RESET } from '../constants/productConstants'
+ import {FaStar} from 'react-icons/fa'
 
 
  const ProductScreen = ({ match }) => {
@@ -139,7 +140,7 @@ import { Link } from 'react-router-dom'
                        <select id="rating" value={rating}
                         onChange={(e) => setRating(e.target.value)}>
                            <option value="">Select</option>
-                           <option value="1">1- Poor</option>
+                           <option value="1">1- Bad</option>
                            <option value="2">2- Fair</option>
                            <option value="3">3- Good</option>
                            <option value="4">4- Very good</option>
